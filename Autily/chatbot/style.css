@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Botão flutuante com imagem */
+.float-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background: #65B7F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 5px #ffffff, /* Borda interna branca */
+                0px 4px 12px rgba(0, 0, 0, 0.3); /* Sombra externa */
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.float-button.hidden {
+    display: none; /* Esconde o botão */
+}
+
+.float-button:hover {
+    background: #ffffff;
+    box-shadow: inset 0px 0px 0px 5px #ffffff, /* Borda interna branca */
+                0px 8px 16px rgba(0, 0, 0, 0.4); /* Sombra externa */
+}
+
+/* Centralizando e redimensionando a imagem */
+.float-image {
+    width: 125px; /* Ajuste o tamanho da imagem */
+    height: auto;
+    padding-left: 5px;
+}
+
+/* Janela do Chat */
+.chatbox {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    max-height: 400px;
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s;
+}
+
+.hidden {
+    display: none;
+}
+
+.chat-header {
+    background: #65B7F6;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position: relative;
+}
+
+#profilePic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-button:hover {
+    color: #f1f1f1;
+}
+
+/* Mensagens */
+.messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Balão de mensagem */
+.message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px 0;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Balão de mensagem do usuário */
+.message.user {
+    align-self: flex-end;
+    background: #75bef7c4;
+}
+
+/* Balão de mensagem do assistente */
+.message.assistant {
+    align-self: flex-start;
+    background: #d6d5d5;
+}
+
+.options {
+    padding: 10px;
+}
+
+button.option {
+    display: block;
+    width: 100%;
+    border: none;
+    background: #63b2eec4;
+    color: #333;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 5px 0;
+    font-size: 16px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+button.option:hover {
+    background: #75bef7c4;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+

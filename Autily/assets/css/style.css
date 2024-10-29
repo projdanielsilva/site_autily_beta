@@ -1016,3 +1016,7 @@ body.dark-theme .theme-toggle-btn {
 body.dark-theme .theme-toggle-btn:hover {
   background-color: #444444;
 }
+
+.about.dark-theme {
+  background-color: #121212;
+}
