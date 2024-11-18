@@ -65,8 +65,6 @@
             <a href="#baixar" class="btn btn-primary">Baixar</a>
           </li>
           
-          <button class="theme-toggle-btn" id="toggleThemeBtn">🌜</button>
-
         </ul>
       </nav>
       <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
@@ -246,7 +244,7 @@
 
             </ul>
 
-            <a href="chatbot/index.html" class="btn btn-secondary">Chamar</a>
+            <a href="#" class="btn btn-secondary">lorem</a>
 
           </div>
 
@@ -358,129 +356,95 @@
 
       <section class="section blog" id="blog" aria-label="blog">
         <div class="container">
-
+      
           <p class="section-subtitle" style="color: black;">Colaboradores do projeto</p>
-
           <h2 class="h2 section-title" style="font-family: 'daddy'; color: #65B7F6;">Agradecimentos</h2>
-
+      
           <ul class="blog-list">
-
             <li>
               <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 768; --height: 558;">
-                  <img src="./assets/images/bruna.png" width="768" height="558" loading="lazy"
-                    alt="Build A Full Web Chat App From Our Scratch" class="img-cover">
+                <figure class="card-banner img-holder">
+                  <img src="./assets/images/bruna.png" loading="lazy" alt="Artigo sobre autismo" class="img-cover">
                 </figure>
-
                 <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="card-meta-text" datetime="2022-05-22">2024</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
-
-                      <p class="card-meta-text">Artigo</p>
-                    </li>
-
-                  </ul>
-
                   <h3 class="h3">
                     <a href="#" class="card-title">Desmistificando o Autismo: Insights de uma Especialista</a>
                   </h3>
-
-                  <a href="#" class="btn btn-outline">Veja Mais</a>
-
+                  <button class="btn btn-outline" onclick="showModal('modal1')">Veja Mais</button>
                 </div>
-
               </div>
             </li>
-
-          <li>
+      
+            <li>
               <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 768; --height: 558;">
-                  <img src="./assets/images/equipeautily.jpg" width="768" height="558" loading="lazy"
-                    alt="Brush Strokes Energize Trees In Paintings" class="img-cover">
+                <figure class="card-banner img-holder">
+                  <img src="./assets/images/equipeautily.jpg" loading="lazy" alt="Artigo sobre o Autily" class="img-cover">
                 </figure>
-
                 <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="card-meta-text" datetime="2022-05-22">2024</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
-
-                      <p class="card-meta-text">Artigo</p>
-                    </li>
-
-                  </ul>
-
                   <h3 class="h3">
                     <a href="#" class="card-title">Empatia em Código: A Experiência de Criar o Autily</a>
                   </h3>
-
-                  <a href="#" class="btn btn-outline">Veja Mais</a>
-
+                  <button class="btn btn-outline" onclick="showModal('modal2')">Veja Mais</button>
                 </div>
-
               </div>
             </li>
-
+      
             <li>
               <div class="blog-card">
-
-                <figure class="card-banner img-holder" style="--width: 768; --height: 558;">
-                  <img src="./assets/images/paisecriancasimg.jpg" width="768" height="558" loading="lazy"
-                    alt="Brush Strokes Energize Trees In Paintings" class="img-cover">
+                <figure class="card-banner img-holder">
+                  <img src="./assets/images/paisecriancasimg.jpg" loading="lazy" alt="Impacto do Autily" class="img-cover">
                 </figure>
-
                 <div class="card-content">
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="card-meta-text" datetime="2022-05-22">2024</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbox-outline" aria-hidden="true"></ion-icon>
-
-                      <p class="card-meta-text">Artigo</p>
-                    </li>
-
-                  </ul>
-
                   <h3 class="h3">
                     <a href="#" class="card-title">App Autily: Pais e o Impacto no Apoio a Crianças Autistas</a>
                   </h3>
-
-                  <a href="#" class="btn btn-outline">Veja Mais</a>
-
+                  <button class="btn btn-outline" onclick="showModal('modal3')">Veja Mais</button>
                 </div>
-
               </div>
             </li>
-        
-
           </ul>
-
+      
+          <!-- Modais -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="hideModal('modal1')">&times;</span>
+              <img src="./assets/images/article1.jpg" alt="Imagem do artigo 1" class="modal-article-image">
+              <h3>Desmistificando o Autismo</h3>
+              <p>
+                Este artigo explora os principais desafios enfrentados pelas pessoas com autismo e como a sociedade pode
+                oferecer suporte. Insights de especialistas ajudam a desmistificar conceitos e promovem maior inclusão.
+              </p>
+            </div>
+          </div>
+      
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="hideModal('modal2')">&times;</span>
+              <img src="./assets/images/article2.jpg" alt="Imagem do artigo 2" class="modal-article-image">
+              <h3>Empatia em Código</h3>
+              <p>
+                Descubra como a equipe desenvolveu o Autily, um aplicativo projetado para oferecer suporte emocional e
+                funcional a pais de crianças autistas, promovendo empatia e tecnologia a serviço do bem-estar.
+              </p>
+            </div>
+          </div>
+      
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="hideModal('modal3')">&times;</span>
+              <img src="./assets/images/article3.jpg" alt="Imagem do artigo 3" class="modal-article-image">
+              <h3>App Autily</h3>
+              <p>
+                O Autily tem transformado vidas ao proporcionar aos pais uma ferramenta prática para organizar rotinas e
+                entender melhor as necessidades de crianças autistas. Leia sobre o impacto e os relatos emocionantes de
+                famílias.
+              </p>
+            </div>
+          </div>
+      
         </div>
       </section>
+      
 
     </article>
   </main>

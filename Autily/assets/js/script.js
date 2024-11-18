@@ -53,17 +53,10 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Seleciona o botão
-const toggleThemeBtn = document.getElementById("toggleThemeBtn");
+function showModal(modalId) {
+  document.getElementById(modalId).style.display = 'block';
+}
 
-// Adiciona o evento de clique
-toggleThemeBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-theme");
-
-    // Alterna o ícone do botão entre sol e lua
-    if (document.body.classList.contains("dark-theme")) {
-        toggleThemeBtn.textContent = "🌞";
-    } else {
-        toggleThemeBtn.textContent = "🌜";
-    }
-});
+function hideModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
+}
